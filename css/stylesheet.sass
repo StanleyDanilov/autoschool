@@ -1,0 +1,689 @@
+@font-face
+	font-family: 'RobotoLight'
+	src: url(/fonts/Roboto/Roboto-Light.ttf)
+
+@font-face
+	font-family: 'RobotoRegular'
+	src: url(/fonts/Roboto/Roboto-Regular.ttf)
+
+@font-face
+	font-family: 'RobotoMedium'
+	src: url(/fonts/Roboto/Roboto-Medium.ttf)
+
+@font-face
+	font-family: 'RobotoBold'
+	src: url(/fonts/Roboto/Roboto-Regular.ttf)
+
+@font-face
+	font-family: 'LatoBold'
+	src: url(/fonts/Lato/Lato-Bold.ttf)
+
+// === Vars start ===
+
+$ff-lato-bold: 'LatoBold', sans-serif
+$ff-roboto-light: 'RobotoLight', sans-serif
+$ff-roboto-regular: 'RobotoRegular', sans-serif
+$ff-roboto-medium: 'RobotoMedium', sans-serif
+$ff-roboto-bold: 'RobotoBold', sans-serif
+$primary-color: #49f458
+$secondary-color: #333
+$third-color: #f6f6f6
+
+// === Vars end ===
+
+*
+  box-sizing: border-box
+  margin: 0
+  padding: 0
+  font-family: $ff-roboto-regular
+  color: #000
+
+a
+  text-decoration: none
+
+ul
+  list-style: none
+
+.btn-primary
+  outline: none
+  text-transform: uppercase
+  background-color: $primary-color
+  cursor: pointer
+  border: none
+  box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25)
+  font-family: $ff-roboto-medium
+  padding: 7px 29px 9px
+
+.plus-sign::after
+  display: inline-block
+  content: url(/images/plus-sign.svg)
+  width: 9px
+  height: 6px
+  padding-left: 5px
+
+.section-title
+  font-size: 24px
+  line-height: 30px
+  font-family: $ff-roboto-bold
+  font-weight: 700
+
+
+// === Header start ===
+
+.container
+  max-width: 1250px
+  width: 100%
+  padding: 0 15px
+  margin: 0 auto
+
+.main__logo
+  display: block
+  max-width: 365px
+  width: 100%
+  background-color: $primary-color
+  color: $secondary-color
+  font-size: 25px
+  line-height: 30px
+  padding: 4px 10px
+  text-transform: uppercase
+  text-align: center
+
+  &-first
+    font-family: $ff-roboto-light
+    color: $secondary-color
+  
+  &-second
+    font-family: $ff-lato-bold
+    font-weight: 700
+    color: $secondary-color
+
+.page-header
+  width: 100%
+  padding: 20px 0
+  display: flex
+  align-items: center
+
+  &__nav 
+    padding-left: 28px
+
+  .header-nav 
+    display: flex
+    align-items: center
+
+    &__item
+      padding: 0 5px
+
+    &__link
+      color: $secondary-color
+      font-family: $ff-roboto-light
+      font-size: 16px
+      line-height: 18.75px
+      padding: 5px
+
+    .btn-dropdown-show
+      color: $secondary-color
+      font-family: $ff-roboto-light
+      font-size: 16px
+      line-height: 18.75px
+      padding: 5px
+      background-color: transparent
+      border: none
+      outline: none
+      cursor: pointer
+
+    .dropdown-open
+      display: flex
+      align-items: center
+
+      &::after
+        display: block
+        content: url(/images/arrow-down.svg)
+        width: 9px
+        height: 6px
+
+    .dropdown-menu
+      display: none
+      flex-direction: column
+
+
+    .dropdown-menu__show
+      display: flex
+
+.contacts
+  color: #333
+  display: flex
+  flex-direction: column
+  margin-left: auto
+  align-items: flex-end
+
+  &__phone
+    font-size: 24px
+    line-height: 28.13px
+    font-family: $ff-roboto-regular
+    color: $secondary-color
+    margin-bottom: 5px
+
+  &__callback-btn
+    font-size: 16px
+    font-family: $ff-roboto-regular
+    line-height: 18.75px
+    color: $secondary-color
+    background-color: transparent
+    border: none
+    border-bottom: 1px dashed $primary-color
+    text-transform: uppercase
+
+// === Header end ===
+
+
+// === Main start ===
+
+.main
+  width: 100%
+  display: flex
+
+  &__link
+    color: $primary-color
+    font-size: 16px
+    line-height: 18.75px
+
+  &__path
+    display: flex
+    width: 100%
+    padding: 13px 0
+    margin-bottom: 20px
+    
+    &-item
+
+      &::after
+        display: inline-block
+        content: url(/images/arrow-right.svg)
+        width: 10px
+        height: 5px
+        padding: 0 10px
+
+      &:last-child::after
+        display: none
+        
+  .main__content-left
+    display: flex
+    flex-direction: column
+    align-items: flex-end
+    max-width: 397px
+  
+  .main-moto
+    max-width: 100%
+    height: auto
+
+  .main__card-title
+    display: inline-block
+    font-size: 24px
+    line-height: 30px
+    font-family: $ff-roboto-bold
+
+  .main__offers
+    background-color: $third-color
+    display: flex
+    max-width: 387px
+    margin: 40px 0
+
+    &__wrap
+      transform: translate(-10px, -14px)
+
+      .main__offers-text:first-child
+        font-size: 20px
+
+    &-img
+      border-radius: 5px
+      filter: drop-shadow(0px 3px 10px rgba(0, 0, 0, 0.2))
+
+    .main__offers-card
+      display: flex
+      position: relative
+      margin: 20px 0
+
+    .main__offers-other
+      padding-left: 20px
+
+    .main__offers-remind
+      padding: 6px 14px
+      background-color: $primary-color
+      text-transform: uppercase
+      color: #000
+      font-size: 16px
+      line-height: 18.75px
+      font-family: $ff-roboto-regular
+      position: absolute
+      top: 15px
+      left: 10px
+
+    .main__offers-text
+      display: inline-block
+      font-size: 18px
+      color: #000
+      font-family: $ff-roboto-regular
+      margin-bottom: 10px
+
+    .main__offers-link
+      display: inline-block
+      font-size: 16px
+      line-height: 19px
+      font-family: $ff-roboto-bold
+      font-weight: 700
+      color: #000
+      text-transform: uppercase
+      border-bottom: 1px solid $primary-color
+      margin-top: 10px
+      padding-bottom: 3px
+
+      &::after
+        display: inline-block
+        content: url(/images/link-arrow-down.svg)
+        width: 10px
+        height: 5px
+        padding: 0 10px
+
+.main__actions
+  display: flex
+  flex-direction: column
+
+  &-title
+    font-size: 18px
+    line-height: 21.09px
+    font-family: $ff-roboto-bold
+    margin-bottom: 5px
+
+  &-text
+    font-size: 16px
+    line-height: 24px
+    margin-bottom: 10px
+
+  &-container
+    max-width: 396px
+    padding: 20px 10px
+    display: flex
+    flex-direction: column
+    align-items: flex-start
+    border: 3px solid $primary-color
+    margin-bottom: 20px
+
+    &:last-child
+      margin-bottom: 0
+
+
+.main-title
+  font-size: 30px
+  line-height: 37px
+  font-family: $ff-roboto-bold
+  font-weight: 700
+  color: #292b2c
+  margin-bottom: 20px
+
+.main__content-right
+  padding-left: 30px
+
+  .main__products
+    display: flex
+    margin-bottom: 60px
+
+    &-title
+      font-size: 24px
+      font-weight: 700
+      font-family: $ff-roboto-bold
+
+    &-description
+      padding: 6px 0
+
+    &-price
+      font-size: 24px
+      margin-bottom: 13px
+
+    &-link
+      display: inline-block
+      font-size: 16px
+      line-height: 24px
+      color: #000
+      border-bottom: 1px solid $primary-color
+      margin-bottom: 11px
+
+      &:last-child
+        margin-bottom: 20px
+
+    .main__products-1
+      max-width: 328px
+      position: relative
+      z-index: 10
+      margin-right: 54px
+
+      .main__products-bg1
+        position: absolute
+        width: 308px
+        height: 378px
+        background-color: $third-color
+        z-index: -1
+        bottom: 35px
+        left: 10px
+
+    .main__products-2
+      max-width: 357px
+      position: relative
+      z-index: 10
+
+      .main__products-text
+        font-size: 16px
+        line-height: 24px
+        color: $secondary-color
+        margin-bottom: 12px
+
+        .main__products-link
+          margin-bottom: 0
+
+      .main__products-bg2
+        position: absolute
+        width: 304px
+        height: 414px
+        background-color: $third-color
+        z-index: -1
+        bottom: -16px
+        left: 23px
+
+  .main-info
+    display: flex
+    flex-direction: column
+
+    &__wrap
+      margin-bottom: 20px
+
+      .main-info__link
+        display: block
+        color: $primary-color
+
+    &-title
+      font-size: 20px
+      line-height: 25px
+      font-family: $ff-roboto-bold
+      font-weight: 700
+      margin-bottom: 10px
+
+    &-text
+      font-size: 16px
+      line-height: 24px
+      margin-bottom: 10px
+
+      &__underlined
+        border-bottom: 1px solid $primary-color
+
+    .main-info__model
+      text-transform: uppercase
+      display: inline-block
+      
+      &::before
+        display: inline-block
+        content: url(/images/dot.svg)
+        width: 9px
+        height: 6px
+        padding-right: 5px
+
+  .main-info__schedule
+    display: flex
+
+    &-wrap
+      display: flex
+      flex-direction: column
+      align-items: center
+      padding: 23px 20px 35px
+      border: 1px dashed #d4d4d4
+      margin-right: 10px
+
+      &:last-child
+        margin-right: 0
+
+    .schedule__day
+      font-size: 20px
+      line-height: 25px
+      margin-bottom: 5px
+
+    .schedule__info
+      font-size: 15px
+      line-height: 22px
+      margin-bottom: 11px
+
+    .schedule__time
+      text-align: center
+      margin-bottom: 6px
+      font-size: 16px
+      line-height: 24px
+
+      &:last-child
+        margin-bottom: 0
+
+.practicing-moto__item
+  padding-left: 20px
+
+// === Main end ===
+
+
+// === Section photos start ===
+
+.photos
+  max-width: 740px
+  width: 100%
+  margin: 0 auto
+  margin-bottom: 40px
+
+  &-title
+    font-size: 24px
+    line-height: 30px
+    font-family: $ff-roboto-bold
+    font-weight: 700
+    margin-bottom: 10px
+
+  &__slider-large
+    margin-bottom: 10px
+    outline: none
+
+  &__slider-small
+    max-width: 500px
+    position: relative
+    margin: 0 auto
+    outline: none
+
+    .slick-arrow
+      position: absolute
+      top: 50%
+      transform: translateY(-50%)
+      z-index: 10
+      font-size: 0
+      width: 17px
+      height: 13px
+      border: none
+      outline: none
+      cursor: pointer
+
+    .slick-prev
+      left: -30px
+      background: url(/images/slider-nav-prev.svg) 0 0 no-repeat
+
+    .slick-next
+      right: -30px
+      background: url(/images/slider-nav-next.svg) 0 0 no-repeat
+
+    & img
+      padding: 0 8px
+
+// === Section photos end ===
+
+
+// === Section practice-video start ===
+
+.practice-video
+  margin: 0 auto
+  margin-bottom: 40px
+
+  &-title
+    font-size: 24px
+    line-height: 30px
+    font-family: $ff-roboto-bold
+    font-weight: 700
+    margin-bottom: 10px
+    text-align: center
+
+  &__wrap
+    display: flex
+    flex-wrap: wrap
+    justify-content: center
+
+  &__item
+    max-width: 360px
+    max-height: 194px
+    padding: 5px
+
+// === Section practice-video end ===
+
+
+// === Section results start ===
+
+.results
+  max-width: 730px
+  width: 100%
+  margin: 0 auto
+  margin-bottom: 40px
+
+  &-title
+    margin-bottom: 10px
+
+  &__address
+    display: flex
+    justify-content: space-between
+
+    .results__addres-title
+      font-size: 20px
+      font-family: $ff-roboto-bold
+      font-weight: 700
+      color: $secondary-color
+      margin-bottom: 10px
+
+    .results__address-item
+      display: inline-block
+      border-bottom: 1px solid $primary-color
+      margin-bottom: 20px
+      color: #292b2c
+      font-size: 16px
+
+// === Section results end ===
+
+
+// === Section inst-widget start ===
+
+.inst-widget
+  max-width: 740px
+  height: 400px
+  width: 100%
+  margin: 0 auto
+  margin-bottom: 40px
+  background-color: $secondary-color
+  display: flex
+  flex-direction: column
+  align-items: center
+  justify-content: center
+  
+// === Section result end ===
+
+
+// === Section footer start ===
+
+.footer
+  padding: 35px 0 25px
+  background-color: #171717
+
+  .container
+    max-width: 1280px
+    width: 100%
+
+  &__top
+    display: flex
+    justify-content: space-between
+    align-items: center
+    padding-bottom: 30px
+    border-bottom: 1px solid #525252
+
+    .footer__logo
+      padding: 25px 0 19px
+      max-width: 482px
+      width: 100%
+      margin-right: 98px
+
+    .footer__top-categories-title
+      color: #fff
+      margin-bottom: 10px
+      line-height: 21.09px
+
+    .footer__top-categories-item
+      display: inline-block
+      padding: 7px 14px
+      background-color: #212121
+      color: #fff
+      border-radius: 5px
+      margin-right: 5px
+
+      &:last-child
+        margin-right: 0
+
+    .footer__phone
+      color: #fff
+      margin-bottom: 10px
+
+    .footer__callback-btn
+      color: #fff
+
+  .footer__middle
+    max-width: 990px
+    width: 100%
+    padding: 30px 0 61px
+    display: flex
+    justify-content: space-between
+    margin: 0 auto
+
+    &-link
+      display: block
+      color: #fff
+      font-size: 16px
+      margin-bottom: 15px
+
+  .footer__bottom
+    width: 100%
+    display: flex
+    justify-content: space-between
+    align-items: center
+    padding-top: 25px
+    border-top: 1px solid #525252
+
+    &-text
+      font-size: 14px
+      color: #959595
+      margin-bottom: 10px
+      
+      &:last-child
+        margin-bottom: 0
+
+    .footer__bottom-social
+      display: flex
+
+      .social-item
+        width: 44px
+        height: 44px
+        display: flex
+        justify-content: center
+        align-items: center
+        border-radius: 50%
+        background-color: $secondary-color
+        cursor: pointer
+        margin-right: 6px
+
+        &:last-child
+          margin-right: 0
+    
+    
+
+  
+// === Section footer end ===

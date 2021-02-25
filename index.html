@@ -1,0 +1,351 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Autoschool</title>
+  <link rel="stylesheet" type="text/css" href="//cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.css"/>
+  <link rel="stylesheet" type="text/css" href="css/stylesheet.css">
+</head>
+<body>
+  <div class="container">
+    <header class="page-header">
+      <a href="/" class="main__logo">
+        <span class="main__logo-first">Автошкола</span>
+        <span class="main__logo-second">Перспектива</span>
+      </a>
+  
+      <nav class="page-header__nav">
+        <ul class="header-nav">
+          <li class="header-nav__item"><a href="#" class="header-nav__link">Главная</a></li>
+          <li class="header-nav__item"><a href="#" class="header-nav__link">Цены</a></li>
+          <li class="header-nav__item"><a href="#" class="header-nav__link">Акции</a></li>
+          <li class="header-nav__item"><a href="#" class="header-nav__link">Отзывы</a></li>
+          <li class="header-nav__item"><a href="#" class="header-nav__link">Онлайн обучение</a></li>
+          
+          <li class="header-nav__item dropdown-open">
+            <button class="btn-dropdown-show" type="button">Ещё</button>
+          </li>
+  
+          <div class="dropdown-menu">
+            <!-- <span class="dropdown-triangle"></span> -->
+            <a class="dropdown-item" href="#">Расписание занятий</a>
+            <a class="dropdown-item" href="#">Мотошкола</a>
+            <a class="dropdown-item" href="#">Вопрос-Ответ</a>
+            <a class="dropdown-item" href="#">Учащимся</a>
+            <a class="dropdown-item" href="#">О нас</a>
+            <a class="dropdown-item" href="#">Контакты</a>
+          </div>
+          
+        </ul>
+      </nav>
+  
+      <div class="contacts page-header__contacts">
+        <a class="contacts__phone page-header__phone" href="tel:+74956498283">+7 (495) 649-82-83</a>
+        <a class="contacts__callback-btn page-header__callback-btn" href="tel:+74956498283">обратный звонок</a>
+      </div>
+    </header>
+
+    <div class="main__path">
+      <a href="#" class="main__path-item main__link">Главная</a>
+      <a href="#" class="main__path-item main__link">Цены</a>
+      <a href="#" class="main__path-item main__link">Права категории А в Москве. Обучение.</a>
+    </div>
+    
+    <main class="main">
+
+      <div class="main__content-left">
+        <img src="/images/main-moto.png" alt="moto" class="main-moto">
+        <div class="main__offers">
+          <div class="main__offers__wrap">
+            <h3 class="main__card-title">Акции</h3>
+            <a href="#" class="main__offers-other main__link">Все акции</a>
+            <a href="#" class="main__offers-card">
+              <img src="/images/card-img.png" alt="offers" class="main__offers-img">
+              <span class="main__offers-remind">Предложение ограничено</span>
+            </a>
+            <div class="main__offers-description">
+              <span class="main__offers-text"><b>Теория за 11 000р., категория А</b></span>
+              <span class="main__offers-text">Стоимость: <span id="main__offers-cost"><b>11 000 ₽</b></span></span>
+              <span class="main__offers-text">Осталось мест: <span id="main__offers-places"><b>5</b></span></span>
+            </div>
+            <a href="#" class="main__offers-link">Подробнее</a>
+          </div>
+        </div>
+
+        <div class="main__actions">
+          <div class="main__actions-container main__bonuses">
+            <h3 class="main__actions-title">Бонусы</h3>
+            <p class="main__actions-text">В день оформления ВАС будут ждать приятные подарки, которыми можно будет воспользоваться при обслуживании ВАШЕГО автомобиля. Подробности можно узнать у наших офис – менеджеров по телефону, а также забронировать уже сейчас удобный для себя курс обучения.</p>
+            <button class="btn-primary main__bonuses-btn">позвонить</button>
+          </div>
+          <div class="main__actions-container main__sale">
+            <h3 class="main__actions-title">Скидка 1000 ₽</h3>
+            <p class="main__actions-text">Забронируй бесплатно место для обучения и получи скидку 1000 рублей, при условии, если оформление произойдет не позднее 5 дней после брони.</p>
+            <button class="btn-primary plus-sign main__sale-btn">забронировать</button>
+          </div>
+        </div>
+
+
+      </div>
+
+      <div class="main__content-right">
+        <h1 class="main-title">Права категории А в Москве. Обучение.</h1>
+        <div class="main__products">
+          <div class="main__products-1">
+            <h2 class="main__products-title">Теоретический курс + Полный пакет документов для сдачи экзамена в гибдд</h2>
+            <p class="main__products-description">Обучение не более 2-х месяцев</p>
+            <p class="main__products-price">11 000 ₽</p>
+            <a href="#" class="main__products-link">В рассрочку</a>
+            <a href="#" class="main__products-link">Расписание занятий мотошколы</a>
+            <a href="#" class="main__products-link">Как записаться в мотошколу</a>
+            <a href="#" class="main__products-link">Как получить водительское удостоверение</a>
+            <button class="btn-primary plus-sign main__products-btn">Записаться</button>
+            <div class="main__products-bg1"></div>
+          </div>
+
+          <div class="main__products-2">
+            <h2 class="main__products-title">Практика на мотоцикле</h2>
+            <p class="main__products-description">Минимальное количество занятий по вождению – 1</p>
+            <p class="main__products-price">800 ₽ за час</p>
+            <p class="main__products-text">Настоятельно рекомендуем взять минимум 3 занятия по вождению мотоцикла, т.к. это двухколёсное транспортное средство повышенной опасности!</p>
+            <p class="main__products-text">Планирование занятий происходит самостоятельно на ближайшую неделю в графике инструктора</p>
+            <p class="main__products-text">Площадка расположена в Бибирево по адресу: <a href="#" class="main__products-link"><b>проезд Черского вл. 7/21</b></a></p>
+
+            
+            <button class="btn-primary plus-sign main__products-btn">Записаться</button>
+            <div class="main__products-bg2"></div>
+          </div>
+        </div>
+
+        <div class="main-info">
+
+          <div class="main-info__wrap new-programm">
+            <h3 class="main-info-title">Доступны новые программы</h3>
+            <p class="main-info-text"><a href="#" class="main-info-text__underlined">Мотошкола "Перспектива"</a> имеет право обучать по новым программам, что подтверждает <a href="#" class="main-info-text__underlined">заключение от 08.10.2019 о соответствии требованиям ГИБДД.</a> </p>
+            <p class="main-info-text">А так же можете <a href="#" class="main-info-text__underlined">проверить по базе ГИБДД</a></p>
+          </div>
+
+          <div class="main-info__wrap course-consisting">
+            <h3 class="main-info-title">Что входит в курс</h3>
+            <div class="main-info-text">— Теория</div>
+            <a href="#" class="main-info-text main-info__link">— Полный комплект учебной литературы</a>
+            <div class="main-info-text">— Практические занятия на тренажёре</div>
+            <div class="main-info-text">— Проведение внутренних экзаменов</div>
+            <div class="main-info-text">— Регистрация ученика в ГИБДД и оформление для него всех документов, требуемых в ГИБДД от автошколы для допуска к сдаче экзаменов</div>
+            <div class="main-info-text">— Свидетельство государственного образца об окончании автошколы</div>
+          </div>
+
+          <div class="main-info__wrap general-info">
+            <h3 class="main-info-title">Общая информация</h3>
+            <div class="main-info-text">— Приступить к обучению в на категорию "А" можно с 18 лет. </div>
+            <div class="main-info-text">— Обучение вождению проходит на мотоциклах:</div>
+              <div class="main-info-text main-info__model">yamaha ybr 125,</div>
+              <div class="main-info-text main-info__model">suzuki gsr 250,</div>
+              <div class="main-info-text main-info__model">suzuki tu 250,</div>
+              <div class="main-info-text main-info__model">honda ftr 223,</div>
+              <div class="main-info-text main-info__model">suzuki vanvan 200,</div>
+              <div class="main-info-text main-info__model">stels flex 250,</div>
+              <div class="main-info-text main-info__model">минск d4 125</div>
+            <div class="main-info-text">— Ученики, категорий "А" и "В", на теории обучаются совместно . Преподавателю всегда известно про смешанную группу и даже если в группе всего один ученик категории А, все вопросы касающиеся будущих мотоциклистов разбираются более  подробно, начиная от устройства мотоцикла, заканчивая спецификой прогнозирования ситуации для водителя двухколесного мото транспортного средства.</div>
+            <div class="main-info-text">— Сдача экзаменов проходит в отделении ГИБДД. Экзамен в мотошколе на "Категорию А" состоит из 2-х частей - теоретической части на знание Правил дорожного движения и практической части - по вождению мотоцикла на автодроме мото школы.</div>
+          </div>
+
+          <div class="main-info__wrap schedule">
+            <h3 class="main-info-title">Время проведения теоретических занятий:</h3>
+            <div class="main-info__schedule">
+
+              <div class="main-info__schedule-wrap">
+                <div class="schedule__day">Пн Ср</div>
+                <div class="schedule__info">Теория 2 раза в неделю</div>
+                <div class="schedule__time">9.00 – 12.00</div>
+                <div class="schedule__time">14.00  –  17.00</div>
+                <div class="schedule__time">18.30 – 21.30</div>
+                <div class="schedule__time">19.00 – 22.00</div>
+              </div>
+
+              <div class="main-info__schedule-wrap">
+                <div class="schedule__day">Вт Чт</div>
+                <div class="schedule__info">Теория 2 раза в неделю</div>
+                <div class="schedule__time">9.00 – 12.00</div>
+                <div class="schedule__time">18.30 – 21.30</div>
+                <div class="schedule__time">19.00 – 22.00</div>
+              </div>
+
+              <div class="main-info__schedule-wrap">
+                <div class="schedule__day">Выходные дни</div>
+                <div class="schedule__info">Теория 2 раза в неделю</div>
+                <div class="schedule__time">пт. вс. 19.00 – 22.00</div>
+                <div class="schedule__time">сб. вс. 10.00 – 13.00</div>
+                <div class="schedule__time">сб. вс. 11.00 – 14.00</div>
+              </div>
+            </div>
+          </div>
+
+          <div class="main-info__wrap studying-course">
+            <h3 class="main-info-title">Изучение теоретического курса</h3>
+            
+            <p class="main-info-text">Пройти обучение теоретическим знаниям с успехом можно в мотошколе «Перспектива», а срок обучения составит не более 3-х месяцев.</p>
+            
+            <p class="main-info-text">В теоретической части курсанты мотошколы изучают Правила дорожного движения (ПДД), основы безопасности, основы оказания первой медицинской помощи и техническое устройство мотоцикла.</p>
+            
+            <p class="main-info-text">Условия теоретического экзамена требуют настоящего знания, а не пустого зазубривания. Учащемуся не стоит рассчитывать на везение, поэтому лучше всего подготовиться к экзамену теории по-настоящему. Предстоит решить двадцать вопросов за 20 минут. По новой схеме с 1 сентября 2016 г. после каждой ошибки нужно будет ответить еще на пять дополнительных вопросов из того же тематического блока и нельзя сделать две ошибки в одном блоке, иначе экзамен будет не сдан.</p>
+          </div>
+
+          <div class="main-info__wrap practicing-moto">
+            <h3 class="main-info-title">Обучение практическому вождению на мотоцикле</h3>
+            
+            <p class="main-info-text">Обучение практическому вождению состоит из занятий по два астрономических часа каждое.</p>
+            
+            <p class="main-info-text">Практическая часть на автодроме состоит из обязательных упражнений. Выпускник демонстрирует навыки управления мотоциклом с помощью различных упражнений:</p>
+            
+            <div class="main-info-text">
+              <p class="main-info-text practicing-moto__item">— Маневрирование в ограниченном пространстве, торможение и остановка при движении на различных скоростях, включая экстренную остановку;</p>
+              <p class="main-info-text practicing-moto__item">— Парковка транспортного средства и выезд с парковочного места;</p>
+              <p class="main-info-text practicing-moto__item">— Остановка для безопасной посадки или высадки пассажиров.</p>
+            </div>
+
+            <p class="main-info-text">В ходе выполнения этих заданий надо показать умение трогаться с места, вписываться в повороты, передвигаться по кругу, удерживать мотоцикл на прямой линии, набирать и сбрасывать скорость, плавно притормаживать и удерживать мотоцикл в вертикальном положении, не касаясь асфальта ногой.</p>
+
+            <p class="main-info-text">Наши теоретические занятия проводятся в современных, оборудованных компьютерами и техническими средствами учебных аудиториях мотошколы, для практических уроков по обучению вождению мотоцикла предоставляется учебная площадка полностью заасфальтированная, с нанесенной соответствующей разметкой по новым требованиям от 1 сентября 2016 года.</p>
+          </div>
+
+        </div>
+      </div>
+
+    </main>
+
+    <section class="photos">
+      <h3 class="photos-title">Фото с практических занятий</h3>
+
+      <div class="photos__slider-large">
+        <img src="/images/slider-example1.jpg" alt="img">
+        <img src="/images/slider-example2.jpg" alt="img">
+        <img src="/images/slider-example3.jpg" alt="img">
+        <img src="/images/slider-example4.jpg" alt="img">
+        <img src="/images/slider-example5.jpg" alt="img">
+        <img src="/images/slider-example6.jpg" alt="img">
+      </div>
+
+      <div class="photos__slider-small">
+        <img src="/images/slider-example1.jpg" alt="img">
+        <img src="/images/slider-example2.jpg" alt="img">
+        <img src="/images/slider-example3.jpg" alt="img">
+        <img src="/images/slider-example4.jpg" alt="img">
+        <img src="/images/slider-example5.jpg" alt="img">
+        <img src="/images/slider-example6.jpg" alt="img">
+      </div>
+    </section>
+
+    <section class="practice-video">
+      <h3 class="practice-video-title">Практические упражнения мотошколы</h3>
+      <div class="practice-video__wrap">
+        <iframe class="practice-video__item" width="560" height="315" src="https://www.youtube.com/embed/uAtIFOV3Qvs?controls=0" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+        <iframe class="practice-video__item" width="560" height="315" src="https://www.youtube.com/embed/uAtIFOV3Qvs?controls=0" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+        <iframe class="practice-video__item" width="560" height="315" src="https://www.youtube.com/embed/uAtIFOV3Qvs?controls=0" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+      </div>
+    </section>
+
+    <section class="results">
+      <h3 class="section-title results-title">Ваш уровень вождения мотоцикла после обучения</h3>
+      <video src="#"></video>
+
+      <div class="results__address">
+        <div class="results__address-first">
+          <h4 class="results__addres-title">Наши учебные площадки</h4>
+          <a href="#" class="results__address-item">м. Медведково,£ Заревый пр-д, д. 2</a>
+          <a href="#" class="results__address-item">м. Первомайская, 12-ая Парковая, д. 11</a>
+          <a href="#" class="results__address-item">м. Бабушкинская, ул.Молодцова д. 4А</a>
+        </div>
+
+        <div class="results__address-second">
+          <h4 class="results__addres-title">Наши ГИБДД</h4>
+          <a href="#" class="results__address-item">м. Медведково,£ Заревый пр-д, д. 2</a>
+          <a href="#" class="results__address-item">м. Первомайская, 12-ая Парковая, д. 11</a>
+          <a href="#" class="results__address-item">м. Бабушкинская, ул.Молодцова д. 4А</a>
+        </div>
+      </div>
+    </section>
+
+    <section class="inst-widget">
+      <img src="/images/inst-widget.svg" alt="inst">
+      <div>Instagram Widget</div>
+    </section>
+
+  </div>
+
+  <footer class="footer">
+    <div class="container">
+      <div class="footer__top">
+
+        <a href="#" class="main__logo footer__logo">
+          <span class="main__logo-first">Автошкола</span>
+          <span class="main__logo-second">Перспектива</span>
+        </a>
+
+        <div class="footer__top-categories">
+          <div class="footer__top-categories-title">Категории</div>
+          <a href="#" class="footer__top-categories-item">B</a>
+          <a href="#" class="footer__top-categories-item">B1</a>
+          <a href="#" class="footer__top-categories-item">A</a>
+          <a href="#" class="footer__top-categories-item">A1</a>
+          <a href="#" class="footer__top-categories-item">A+B</a>
+        </div>
+
+        <div class="contacts footer__contacts">
+          <a class="contacts__phone footer__phone" href="tel:+74956498283">+7 (495) 649-82-83</a>
+          <a class="contacts__phone footer__phone" href="tel:+74957496959">+7 (495) 749-69-59</a>
+          <a class="contacts__callback-btn footer__callback-btn" href="tel:+74956498283">обратный звонок</a>
+        </div>
+      </div>
+
+      <div class="footer__middle">
+        <div class="footer__middle-item">
+          <a href="#" class="footer__middle-link">Главная</a>
+          <a href="#" class="footer__middle-link">Цены</a>
+          <a href="#" class="footer__middle-link">Акции</a>
+          <a href="#" class="footer__middle-link">Отзывы</a>
+        </div>
+        <div class="footer__middle-item">
+          <a href="#" class="footer__middle-link">Онлайн обучение</a>
+          <a href="#" class="footer__middle-link">Расписание занятий</a>
+          <a href="#" class="footer__middle-link">Часто задаваемые вопросы</a>
+          <a href="#" class="footer__middle-link">Мотошкола</a>
+        </div>
+        <div class="footer__middle-item">
+          <a href="#" class="footer__middle-link">Учащимся</a>
+          <a href="#" class="footer__middle-link">Кабинет ученика</a>
+        </div>
+        <div class="footer__middle-item">
+          <a href="#" class="footer__middle-link">О нас</a>
+          <a href="#" class="footer__middle-link">Контакты</a>
+          <a href="#" class="footer__middle-link">Офисы</a>
+        </div>
+        <div class="footer__middle-item">
+          <a href="#" class="footer__middle-link">Сведения об образовательной организации</a>
+          <a href="#" class="footer__middle-link">Реквизиты</a>
+          <a href="#" class="footer__middle-link">Вакансии</a>
+        </div>
+      </div>
+
+      <div class="footer__bottom">
+        <div class="footer__bottom-copyright">
+          <div class="footer__bottom-text">© 2020 Автошкола "Перспектива".</div>
+          <div class="footer__bottom-text">Заключение № 77/10/3/2019 ГИБДД России по г. Москве от 08 октября 2019 г.</div>
+        </div>
+        <div class="footer__bottom-social">
+          <span class="social-item"><img src="/images/vk.svg" alt="vk"></span>
+          <span class="social-item"><img src="/images/inst.svg" alt="inst"></span>
+          <span class="social-item"><img src="/images/whatsapp.svg" alt="whatsapp"></span>
+          <span class="social-item"><img src="/images/viber.svg" alt="viber"></span>
+        </div>
+      </div>
+    </div>
+  </footer>
+
+  <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js" integrity="sha256-4+XzXVhsDmqanXGHaHvgh1gMQKX40OUvDEBTu8JcmNs=" crossorigin="anonymous"></script>
+  <script type="text/javascript" src="//cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.min.js"></script>
+  <script src="js/app.js"></script>
+</body>
+</html> 
