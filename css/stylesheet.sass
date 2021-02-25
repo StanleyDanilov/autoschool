@@ -131,23 +131,15 @@ ul
       outline: none
       cursor: pointer
 
-    .dropdown-open
-      display: flex
-      align-items: center
-
-      &::after
-        display: block
-        content: url(/images/arrow-down.svg)
-        width: 9px
-        height: 6px
+    ::after
+      content: ""
+      background: url(/images/arrow-down.svg) 0 0 no-repeat
+      width: 10px
+      height: 6px
 
     .dropdown-menu
       display: none
       flex-direction: column
-
-
-    .dropdown-menu__show
-      display: flex
 
 .contacts
   color: #333

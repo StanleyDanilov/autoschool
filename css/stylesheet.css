@@ -146,19 +146,10 @@ ul {
   cursor: pointer;
 }
 
-.page-header .header-nav .dropdown-open {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
-}
-
-.page-header .header-nav .dropdown-open::after {
-  display: block;
-  content: url(/images/arrow-down.svg);
-  width: 9px;
+.page-header .header-nav ::after {
+  content: "";
+  background: url(/images/arrow-down.svg) 0 0 no-repeat;
+  width: 10px;
   height: 6px;
 }
 
@@ -168,12 +159,6 @@ ul {
   -webkit-box-direction: normal;
       -ms-flex-direction: column;
           flex-direction: column;
-}
-
-.page-header .header-nav .dropdown-menu__show {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
 }
 
 .contacts {
